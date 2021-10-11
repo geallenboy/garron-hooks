@@ -1,4 +1,3 @@
-
 # 技术栈
 
 - React 17
@@ -24,20 +23,19 @@
 
 - TypeScript4
 
-- Hook+Content/Redux Toolkit管理客户端全局状态
+- Hook+Content/Redux Toolkit 管理客户端全局状态
 
-- React Query管理服务端全局状态
+- React Query 管理服务端全局状态
 
 - 性能优化，性能监控，性能报告
 
-- 自动化测试：单元测试，集成测试，e2e测试
+- 自动化测试：单元测试，集成测试，e2e 测试
 
 - CSS-in-JS,Grid,Flexbox
 
 - React Router 6
 
 ## git 提交规则
-
 
 ```
 build
