@@ -1,12 +1,23 @@
 import React from 'react';
-import { useAuth } from 'context/auth-context';
-
 import './App.css';
-import { ScreensMain } from 'screens/screens-main';
-import { UserInfo } from 'screens/user-info';
+import { useAuth } from 'context/auth-context';
+import { ErrorBoundary } from 'components/error-boudnary';
+import { FullPageErrorFallback, FullPageLoading } from 'components/lib';
+
+const ScreensMain = React.lazy(() => import('screens/screens-main'));
+const UserInfo = React.lazy(() => import('screens/user-info'));
+
 function App() {
   const { user } = useAuth();
-  return <div className="App">{user ? <ScreensMain /> : <UserInfo />}</div>;
+  return (
+    <div className="App">
+      <ErrorBoundary fallbackRender={FullPageErrorFallback}>
+        <React.Suspense fallback={<FullPageLoading />}>
+          {user ? <ScreensMain /> : <UserInfo />}
+        </React.Suspense>
+      </ErrorBoundary>
+    </div>
+  );
 }
 
 export default App;
