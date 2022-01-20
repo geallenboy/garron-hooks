@@ -7,7 +7,7 @@ const useLogger = (name: string, props: any): void => {
   }, [name]);
 
   useEffect(() => {
-    console.log(`${name} props updated`, props, this);
+    console.log(`${name} props updated`, props);
   });
 };
 
