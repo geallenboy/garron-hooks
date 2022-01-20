@@ -6,7 +6,7 @@
     "eslint": "eslint ./src/**/*.ts",
     "test": "jest --watch --collect-coverage --verbose",
     "prettier": "prettier --write  \"src/**/*.{js,ts,tsx,md}\"",
-    "commit": "npm run prettier && npm run eslint && git-cz",
+    "commit": "git-cz",
     "prepare": "husky install"
   },
   "dependencies": {
