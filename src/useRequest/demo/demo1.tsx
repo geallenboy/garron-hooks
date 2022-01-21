@@ -4,7 +4,7 @@
  */
 
 import React, { useRef, useState } from 'react';
-import useLogger from '../index';
+
 
 export default function () {
 

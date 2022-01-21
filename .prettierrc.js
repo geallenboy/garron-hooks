@@ -1,4 +1,1 @@
-const prettierLint = require('@garron/standard/dist/prettierLint')
-module.exports = {
-  ...prettierLint
-};
+module.exports = require('@umijs/fabric').prettier;
