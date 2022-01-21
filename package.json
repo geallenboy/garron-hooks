@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "description",
   "scripts": {
-    "eslint": "eslint ./src/**/*.ts",
+    "eslint": "eslint --fix ./src/**/*.ts",
     "test": "jest --watch --collect-coverage --verbose",
     "prettier": "prettier --write  \"src/**/*.{js,ts,tsx,md}\"",
+    "lint-staged": "lint-staged",
     "commit": "git-cz",
     "prepare": "husky install"
   },
@@ -44,7 +45,8 @@
   "lint-staged": {
     "*.ts": [
       "npm run prettier",
-      "npm run eslint"
+      "npm run eslint",
+      "git add ."
     ]
   },
   "browserslist": {
