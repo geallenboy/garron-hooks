@@ -2,9 +2,8 @@ import { defineConfig } from 'dumi';
   // more config: https://d.umijs.org/config
 export default defineConfig({
   title: 'garron-hooks',
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  favicon:'./public/logo.svg',
+  logo: 'logo.svg',
   resolve: {
     includes: ['docs', 'src'],
   },
@@ -26,14 +25,17 @@ export default defineConfig({
       {
         'title':'异步请求',
         children:[
-          'useRequest/doc',
+          '/useRequest/doc',
         ]
       },
       {
-        'title':'dom',
+        'title':'常用hook',
         children:[
-          'dom/useMouse',
-          'dom/useScroll',
+          '/useMouse',
+          '/useScroll',
+          '/useToggle',
+          '/useRouter',
+          '/useEventListener'
         ]
       }
     ]
@@ -49,7 +51,7 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/umijs/dumi',
+      path: 'https://github.com',
     }
   ],
 });
