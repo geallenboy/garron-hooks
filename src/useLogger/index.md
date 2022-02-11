@@ -1,6 +1,9 @@
 ---
+title: useLogger
 nav:
   path: /hooks
+group:
+  path: /
 ---
 
 # useDrop & useDrag

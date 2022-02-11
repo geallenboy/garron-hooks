@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
   // more config: https://d.umijs.org/config
 export default defineConfig({
-  title: 'garron-hooks',
+  title: '组件',
   favicon:'./public/logo.svg',
   logo: 'logo.svg',
   resolve: {
@@ -25,7 +25,7 @@ export default defineConfig({
       {
         'title':'异步请求',
         children:[
-          '/useRequest/doc',
+          '/useRequest/doc/index',
         ]
       },
       {
@@ -35,7 +35,8 @@ export default defineConfig({
           '/useScroll',
           '/useToggle',
           '/useRouter',
-          '/useEventListener'
+          '/useEventListener',
+          '/useSetState'
         ]
       }
     ]

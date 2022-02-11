@@ -1,5 +1,5 @@
 ---
-title: mouse
+title: useMouse
 nav:
   path: /hooks
 group:

@@ -1,8 +1,9 @@
 ---
+title: useRequest
 nav:
   path: /hooks
 group:
-  path: /use-request
+  path: /
 ---
 
 # 基础用法
