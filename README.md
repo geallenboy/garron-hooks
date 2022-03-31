@@ -1,33 +1,16 @@
-# garron-hooks
 
-## Getting Started
 
-Install dependencies,
+## ✨ 特性
 
-```bash
-$ npm i
-```
+- 易学易用
+- 常用hook
+- 使用 TypeScript 构建，提供完整的类型定义文件
 
-Start the dev server,
+## 📦 安装
 
 ```bash
-$ npm start
+$ npm install --save @garron/hooks
+# or
+$ yarn add @garron/hooks
 ```
 
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Run test,
-
-```bash
-$ npm test
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
