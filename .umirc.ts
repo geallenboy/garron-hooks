@@ -45,14 +45,14 @@ export default defineConfig({
     {
       title: '指南',
       path: '/guide',
-    }, 
+    },
     {
       title: 'Hooks',
       path: '/hooks',
     },
     {
       title: 'GitHub',
-      path: 'https://github.com',
+      path: 'https://github.com/geallenboy/garron-hooks',
     }
   ],
 });
